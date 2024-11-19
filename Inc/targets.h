@@ -35,6 +35,7 @@
 // #define GD32SKYSTARS30
 // #define GD32SKYSTARS40
 #endif
+#define RECTIFIED_F501
 
 // used to hold a port/pin in a single 16 bit integer
 #define GPIO_PORT_PIN(portnum, pinnum) ((portnum)<<8|(pinnum))
@@ -1350,6 +1351,15 @@
 #ifdef REPEAT_DRIVE_F051
 #define FILE_NAME "REPEAT_DRIVE_F051"
 #define FIRMWARE_NAME "REPEAT DRIVE"
+#define DEAD_TIME 25
+#define HARDWARE_GROUP_F0_B
+#define USE_SERIAL_TELEMETRY
+#define VOLTAGE_BASED_RAMP
+#endif
+
+#ifdef RECTIFIED_F501
+#define FILE_NAME "RECTIFIED_F501"
+#define FIRMWARE_NAME "RECTIFIED"
 #define DEAD_TIME 25
 #define HARDWARE_GROUP_F0_B
 #define USE_SERIAL_TELEMETRY
